@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CF0EC17182E398150FFA790 /* Pods_FindMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57846A04FAC58FBD6DE7F84B /* Pods_FindMeTests.framework */; };
 		5543C0B821CB346400853335 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543C0B721CB346400853335 /* AppDelegate.swift */; };
 		5543C0BA21CB346400853335 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543C0B921CB346400853335 /* ViewController.swift */; };
 		5543C0BD21CB346400853335 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5543C0BB21CB346400853335 /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		5543C0C221CB346600853335 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5543C0C021CB346600853335 /* LaunchScreen.storyboard */; };
 		5543C0CD21CB346600853335 /* FindMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543C0CC21CB346600853335 /* FindMeTests.swift */; };
 		5543C0D821CB346600853335 /* FindMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543C0D721CB346600853335 /* FindMeUITests.swift */; };
+		5543C0E621CB348C00853335 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5543C0E521CB348C00853335 /* GoogleService-Info.plist */; };
+		74E7263AC5C7B0C67856F58F /* Pods_FindMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FB53E6F403FE5B8A2FB288 /* Pods_FindMe.framework */; };
+		9F6A3FBECC76DB7142746EB7 /* Pods_FindMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D05FEF5DB892E26C46AE91 /* Pods_FindMeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44D81930A09D1657861FD5DB /* Pods-FindMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMe/Pods-FindMe.release.xcconfig"; sourceTree = "<group>"; };
 		5543C0B421CB346400853335 /* FindMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5543C0B721CB346400853335 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5543C0B921CB346400853335 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,15 @@
 		5543C0D321CB346600853335 /* FindMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5543C0D721CB346600853335 /* FindMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMeUITests.swift; sourceTree = "<group>"; };
 		5543C0D921CB346600853335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5543C0E521CB348C00853335 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		57846A04FAC58FBD6DE7F84B /* Pods_FindMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7011F5C7670BCA7915490449 /* Pods-FindMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMeUITests/Pods-FindMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AD7DECA77A350C765FD5828 /* Pods-FindMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMeUITests/Pods-FindMeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		82FB53E6F403FE5B8A2FB288 /* Pods_FindMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9F0872B0802F772640EBEC0 /* Pods-FindMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMeTests/Pods-FindMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3616BC51B6C860BF5523E3F /* Pods-FindMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMeTests/Pods-FindMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9D05FEF5DB892E26C46AE91 /* Pods_FindMeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE91B60101D76B7D48D4BA2C /* Pods-FindMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMe/Pods-FindMe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E7263AC5C7B0C67856F58F /* Pods_FindMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF0EC17182E398150FFA790 /* Pods_FindMeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6A3FBECC76DB7142746EB7 /* Pods_FindMeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,8 @@
 				5543C0CB21CB346600853335 /* FindMeTests */,
 				5543C0D621CB346600853335 /* FindMeUITests */,
 				5543C0B521CB346400853335 /* Products */,
+				8D0F1398DFA78A2C9ACEC126 /* Pods */,
+				90759CF01D5BB127FCA258F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +122,7 @@
 				5543C0BE21CB346600853335 /* Assets.xcassets */,
 				5543C0C021CB346600853335 /* LaunchScreen.storyboard */,
 				5543C0C321CB346600853335 /* Info.plist */,
+				5543C0E521CB348C00853335 /* GoogleService-Info.plist */,
 			);
 			path = FindMe;
 			sourceTree = "<group>";
@@ -125,6 +145,29 @@
 			path = FindMeUITests;
 			sourceTree = "<group>";
 		};
+		8D0F1398DFA78A2C9ACEC126 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE91B60101D76B7D48D4BA2C /* Pods-FindMe.debug.xcconfig */,
+				44D81930A09D1657861FD5DB /* Pods-FindMe.release.xcconfig */,
+				C9F0872B0802F772640EBEC0 /* Pods-FindMeTests.debug.xcconfig */,
+				D3616BC51B6C860BF5523E3F /* Pods-FindMeTests.release.xcconfig */,
+				7011F5C7670BCA7915490449 /* Pods-FindMeUITests.debug.xcconfig */,
+				7AD7DECA77A350C765FD5828 /* Pods-FindMeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90759CF01D5BB127FCA258F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82FB53E6F403FE5B8A2FB288 /* Pods_FindMe.framework */,
+				57846A04FAC58FBD6DE7F84B /* Pods_FindMeTests.framework */,
+				D9D05FEF5DB892E26C46AE91 /* Pods_FindMeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5543C0DC21CB346600853335 /* Build configuration list for PBXNativeTarget "FindMe" */;
 			buildPhases = (
+				1D621E6174BDFC88C42F3EFA /* [CP] Check Pods Manifest.lock */,
 				5543C0B021CB346400853335 /* Sources */,
 				5543C0B121CB346400853335 /* Frameworks */,
 				5543C0B221CB346400853335 /* Resources */,
+				722CC25ED32E386F7E1D8769 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5543C0DF21CB346600853335 /* Build configuration list for PBXNativeTarget "FindMeTests" */;
 			buildPhases = (
+				9B45D9D597569BFFBA1846E9 /* [CP] Check Pods Manifest.lock */,
 				5543C0C421CB346600853335 /* Sources */,
 				5543C0C521CB346600853335 /* Frameworks */,
 				5543C0C621CB346600853335 /* Resources */,
@@ -167,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5543C0E221CB346600853335 /* Build configuration list for PBXNativeTarget "FindMeUITests" */;
 			buildPhases = (
+				1A66FC6FE881625AC9963DE8 /* [CP] Check Pods Manifest.lock */,
 				5543C0CF21CB346600853335 /* Sources */,
 				5543C0D021CB346600853335 /* Frameworks */,
 				5543C0D121CB346600853335 /* Resources */,
@@ -230,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5543C0C221CB346600853335 /* LaunchScreen.storyboard in Resources */,
+				5543C0E621CB348C00853335 /* GoogleService-Info.plist in Resources */,
 				5543C0BF21CB346600853335 /* Assets.xcassets in Resources */,
 				5543C0BD21CB346400853335 /* Main.storyboard in Resources */,
 			);
@@ -250,6 +298,103 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A66FC6FE881625AC9963DE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D621E6174BDFC88C42F3EFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		722CC25ED32E386F7E1D8769 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FindMe/Pods-FindMe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindMe/Pods-FindMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B45D9D597569BFFBA1846E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5543C0B021CB346400853335 /* Sources */ = {
@@ -428,6 +573,7 @@
 		};
 		5543C0DD21CB346600853335 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE91B60101D76B7D48D4BA2C /* Pods-FindMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +592,7 @@
 		};
 		5543C0DE21CB346600853335 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44D81930A09D1657861FD5DB /* Pods-FindMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +611,7 @@
 		};
 		5543C0E021CB346600853335 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9F0872B0802F772640EBEC0 /* Pods-FindMeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +633,7 @@
 		};
 		5543C0E121CB346600853335 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3616BC51B6C860BF5523E3F /* Pods-FindMeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +655,7 @@
 		};
 		5543C0E321CB346600853335 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7011F5C7670BCA7915490449 /* Pods-FindMeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +676,7 @@
 		};
 		5543C0E421CB346600853335 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AD7DECA77A350C765FD5828 /* Pods-FindMeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
