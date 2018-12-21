@@ -9,15 +9,20 @@
 /* Begin PBXBuildFile section */
 		4CF0EC17182E398150FFA790 /* Pods_FindMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57846A04FAC58FBD6DE7F84B /* Pods_FindMeTests.framework */; };
 		55261C9521CC6E6400434CFB /* GameUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55261C9421CC6E6400434CFB /* GameUser.swift */; };
-		55261C9721CC892A00434CFB /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55261C9621CC892A00434CFB /* SignUpPageViewController.swift */; };
+		55261C9721CC892A00434CFB /* SignupPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55261C9621CC892A00434CFB /* SignupPageViewController.swift */; };
 		5543C0B821CB346400853335 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543C0B721CB346400853335 /* AppDelegate.swift */; };
-		5543C0BA21CB346400853335 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543C0B921CB346400853335 /* ViewController.swift */; };
+		5543C0BA21CB346400853335 /* SigninPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543C0B921CB346400853335 /* SigninPageViewController.swift */; };
 		5543C0BD21CB346400853335 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5543C0BB21CB346400853335 /* Main.storyboard */; };
 		5543C0BF21CB346600853335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5543C0BE21CB346600853335 /* Assets.xcassets */; };
 		5543C0C221CB346600853335 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5543C0C021CB346600853335 /* LaunchScreen.storyboard */; };
 		5543C0CD21CB346600853335 /* FindMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543C0CC21CB346600853335 /* FindMeTests.swift */; };
 		5543C0D821CB346600853335 /* FindMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543C0D721CB346600853335 /* FindMeUITests.swift */; };
 		5543C0E621CB348C00853335 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5543C0E521CB348C00853335 /* GoogleService-Info.plist */; };
+		55BFC40121CD2F3200516CCA /* BackendServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BFC40021CD2F3200516CCA /* BackendServices.swift */; };
+		55BFC40321CD3DE500516CCA /* ImageView+LoadImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BFC40221CD3DE500516CCA /* ImageView+LoadImageUrl.swift */; };
+		55BFC40521CD3FF700516CCA /* CONSTANTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BFC40421CD3FF700516CCA /* CONSTANTS.swift */; };
+		55BFC40721CD44B500516CCA /* SignInPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BFC40621CD44B500516CCA /* SignInPageViewModel.swift */; };
+		55BFC40921CD44CD00516CCA /* SignupPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BFC40821CD44CD00516CCA /* SignupPageViewModel.swift */; };
 		74E7263AC5C7B0C67856F58F /* Pods_FindMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FB53E6F403FE5B8A2FB288 /* Pods_FindMe.framework */; };
 		9F6A3FBECC76DB7142746EB7 /* Pods_FindMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D05FEF5DB892E26C46AE91 /* Pods_FindMeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -42,10 +47,10 @@
 /* Begin PBXFileReference section */
 		44D81930A09D1657861FD5DB /* Pods-FindMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMe/Pods-FindMe.release.xcconfig"; sourceTree = "<group>"; };
 		55261C9421CC6E6400434CFB /* GameUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUser.swift; sourceTree = "<group>"; };
-		55261C9621CC892A00434CFB /* SignUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageViewController.swift; sourceTree = "<group>"; };
+		55261C9621CC892A00434CFB /* SignupPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageViewController.swift; sourceTree = "<group>"; };
 		5543C0B421CB346400853335 /* FindMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5543C0B721CB346400853335 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5543C0B921CB346400853335 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5543C0B921CB346400853335 /* SigninPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninPageViewController.swift; sourceTree = "<group>"; };
 		5543C0BC21CB346400853335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5543C0BE21CB346600853335 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5543C0C121CB346600853335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +62,11 @@
 		5543C0D721CB346600853335 /* FindMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMeUITests.swift; sourceTree = "<group>"; };
 		5543C0D921CB346600853335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5543C0E521CB348C00853335 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55BFC40021CD2F3200516CCA /* BackendServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendServices.swift; sourceTree = "<group>"; };
+		55BFC40221CD3DE500516CCA /* ImageView+LoadImageUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+LoadImageUrl.swift"; sourceTree = "<group>"; };
+		55BFC40421CD3FF700516CCA /* CONSTANTS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CONSTANTS.swift; sourceTree = "<group>"; };
+		55BFC40621CD44B500516CCA /* SignInPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPageViewModel.swift; sourceTree = "<group>"; };
+		55BFC40821CD44CD00516CCA /* SignupPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPageViewModel.swift; sourceTree = "<group>"; };
 		57846A04FAC58FBD6DE7F84B /* Pods_FindMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7011F5C7670BCA7915490449 /* Pods-FindMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMeUITests/Pods-FindMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AD7DECA77A350C765FD5828 /* Pods-FindMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMeUITests/Pods-FindMeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -121,14 +131,11 @@
 			isa = PBXGroup;
 			children = (
 				5543C0B721CB346400853335 /* AppDelegate.swift */,
-				5543C0B921CB346400853335 /* ViewController.swift */,
-				55261C9621CC892A00434CFB /* SignUpPageViewController.swift */,
-				55261C9421CC6E6400434CFB /* GameUser.swift */,
-				5543C0BB21CB346400853335 /* Main.storyboard */,
-				5543C0BE21CB346600853335 /* Assets.xcassets */,
-				5543C0C021CB346600853335 /* LaunchScreen.storyboard */,
-				5543C0C321CB346600853335 /* Info.plist */,
-				5543C0E521CB348C00853335 /* GoogleService-Info.plist */,
+				55BFC3FF21CD2EA800516CCA /* ModelView */,
+				55BFC3FC21CD2E1D00516CCA /* StoryBoad */,
+				55BFC3FA21CD2DE200516CCA /* Model */,
+				55BFC3F821CD29B500516CCA /* View */,
+				55BFC3FE21CD2E8400516CCA /* Resources */,
 			);
 			path = FindMe;
 			sourceTree = "<group>";
@@ -149,6 +156,54 @@
 				5543C0D921CB346600853335 /* Info.plist */,
 			);
 			path = FindMeUITests;
+			sourceTree = "<group>";
+		};
+		55BFC3F821CD29B500516CCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5543C0B921CB346400853335 /* SigninPageViewController.swift */,
+				55261C9621CC892A00434CFB /* SignupPageViewController.swift */,
+				55BFC40221CD3DE500516CCA /* ImageView+LoadImageUrl.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55BFC3FA21CD2DE200516CCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55261C9421CC6E6400434CFB /* GameUser.swift */,
+				55BFC40421CD3FF700516CCA /* CONSTANTS.swift */,
+				55BFC40021CD2F3200516CCA /* BackendServices.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55BFC3FC21CD2E1D00516CCA /* StoryBoad */ = {
+			isa = PBXGroup;
+			children = (
+				5543C0C021CB346600853335 /* LaunchScreen.storyboard */,
+				5543C0BB21CB346400853335 /* Main.storyboard */,
+			);
+			path = StoryBoad;
+			sourceTree = "<group>";
+		};
+		55BFC3FE21CD2E8400516CCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5543C0BE21CB346600853335 /* Assets.xcassets */,
+				5543C0C321CB346600853335 /* Info.plist */,
+				5543C0E521CB348C00853335 /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		55BFC3FF21CD2EA800516CCA /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				55BFC40621CD44B500516CCA /* SignInPageViewModel.swift */,
+				55BFC40821CD44CD00516CCA /* SignupPageViewModel.swift */,
+			);
+			path = ModelView;
 			sourceTree = "<group>";
 		};
 		8D0F1398DFA78A2C9ACEC126 /* Pods */ = {
@@ -391,10 +446,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5543C0BA21CB346400853335 /* ViewController.swift in Sources */,
+				5543C0BA21CB346400853335 /* SigninPageViewController.swift in Sources */,
 				5543C0B821CB346400853335 /* AppDelegate.swift in Sources */,
+				55BFC40321CD3DE500516CCA /* ImageView+LoadImageUrl.swift in Sources */,
+				55BFC40121CD2F3200516CCA /* BackendServices.swift in Sources */,
+				55BFC40521CD3FF700516CCA /* CONSTANTS.swift in Sources */,
+				55BFC40721CD44B500516CCA /* SignInPageViewModel.swift in Sources */,
 				55261C9521CC6E6400434CFB /* GameUser.swift in Sources */,
-				55261C9721CC892A00434CFB /* SignUpPageViewController.swift in Sources */,
+				55BFC40921CD44CD00516CCA /* SignupPageViewModel.swift in Sources */,
+				55261C9721CC892A00434CFB /* SignupPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

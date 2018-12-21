@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Signin Page View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FindMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SigninPageViewController" customModule="FindMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="119.1904047976012"/>
         </scene>
-        <!--Sign Up Page View Controller-->
+        <!--Signup Page View Controller-->
         <scene sceneID="mpA-bw-1mK">
             <objects>
-                <viewController id="eeF-2h-QK5" customClass="SignUpPageViewController" customModule="FindMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eeF-2h-QK5" customClass="SignupPageViewController" customModule="FindMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lHK-EP-yIc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -221,12 +221,16 @@
                                     <constraint firstAttribute="height" constant="120" id="M9I-z3-rtY"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jfs-g3-2cY">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileTemplatePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="jfs-g3-2cY">
                                 <rect key="frame" x="145" y="167" width="85" height="85"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="KGB-CH-PSq"/>
                                     <constraint firstAttribute="height" constant="85" id="OFq-HY-ujp"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Rcb-82-xpa" appends="YES" id="Ei0-TV-AXf"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqw-EZ-Obv">
                                 <rect key="frame" x="117" y="396" width="141" height="38"/>
@@ -235,6 +239,21 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUpAction:" destination="eeF-2h-QK5" eventType="touchUpInside" id="9OY-aF-fu5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxW-Ck-q3i">
+                                <rect key="frame" x="9" y="30" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="TyU-zu-lsI"/>
+                                    <constraint firstAttribute="height" constant="30" id="rFo-rk-kNG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButtonAction:" destination="eeF-2h-QK5" eventType="touchUpInside" id="n8q-Bf-r1D"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.19237945510000001" green="0.83013430040000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -251,18 +270,37 @@
                             <constraint firstItem="jfs-g3-2cY" firstAttribute="leading" secondItem="vKw-mT-YEz" secondAttribute="leading" constant="145" id="ZVE-AP-J1a"/>
                             <constraint firstItem="vKw-mT-YEz" firstAttribute="trailing" secondItem="bcb-BD-nxl" secondAttribute="trailing" constant="16" id="ZlT-uk-KjK"/>
                             <constraint firstItem="bcb-BD-nxl" firstAttribute="leading" secondItem="vKw-mT-YEz" secondAttribute="leading" constant="16" id="dZu-Kx-cGV"/>
+                            <constraint firstItem="hxW-Ck-q3i" firstAttribute="leading" secondItem="vKw-mT-YEz" secondAttribute="leading" constant="9" id="e9m-Gc-NRz"/>
                             <constraint firstItem="vKw-mT-YEz" firstAttribute="trailing" secondItem="E8T-8m-Miv" secondAttribute="trailing" constant="16" id="f5F-Gh-EjF"/>
                             <constraint firstItem="jfs-g3-2cY" firstAttribute="top" secondItem="Gnr-Qj-ZB2" secondAttribute="bottom" constant="8" id="ixK-pM-Z7S"/>
                             <constraint firstItem="Gnr-Qj-ZB2" firstAttribute="top" secondItem="vKw-mT-YEz" secondAttribute="top" constant="46" id="o5D-dB-hvJ"/>
                             <constraint firstItem="bcb-BD-nxl" firstAttribute="top" secondItem="jfs-g3-2cY" secondAttribute="bottom" constant="8" id="sWo-2y-3gT"/>
                             <constraint firstItem="vKw-mT-YEz" firstAttribute="trailing" secondItem="Lqw-EZ-Obv" secondAttribute="trailing" constant="117" id="xi0-Ji-dHv"/>
+                            <constraint firstItem="Gnr-Qj-ZB2" firstAttribute="top" secondItem="hxW-Ck-q3i" secondAttribute="bottom" constant="6" id="zBz-WI-b1b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vKw-mT-YEz"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="8yC-Xe-TyG" id="5fQ-ZT-gGz"/>
+                        <outlet property="findMeTextLabel" destination="Gnr-Qj-ZB2" id="Tyt-O5-gVY"/>
+                        <outlet property="passWordTextField" destination="qgk-nf-gv5" id="WCB-7W-9mQ"/>
+                        <outlet property="profileImageView" destination="jfs-g3-2cY" id="rmE-5b-uXY"/>
+                        <outlet property="reEnterPasswordTextField" destination="RxA-V2-XMU" id="o5k-2V-hjB"/>
+                        <outlet property="signUpButton" destination="Lqw-EZ-Obv" id="V28-hM-wgW"/>
+                        <outlet property="userNameTextField" destination="2iw-zI-q2A" id="OlT-Kw-EOa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1hC-HA-C5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Rcb-82-xpa">
+                    <connections>
+                        <action selector="profilePicTapGestureAction:" destination="eeF-2h-QK5" id="4LM-Oq-QgB"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="820" y="121.88905547226388"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="profileTemplatePhoto" width="200" height="200"/>
+    </resources>
 </document>

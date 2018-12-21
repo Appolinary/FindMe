@@ -8,18 +8,19 @@
 
 import Foundation
 
-struct GameUser : Codable{
+struct GameUser{
     
     var name : String
     var email : String
     var uid : String
+    var profileUrlString : String
     
     func returnAsDictionary() -> [String : String] {
         var dict : [String : String] = [:]
         
-        dict["name"] = name
-        dict["email"] = email
-        dict["uid"] = uid
+        dict[CONSTANTS.BACKEND_USER_NAME_KEY] = name
+        dict[CONSTANTS.BACKEND_USER_EMAIL_KEY] = email
+        dict[CONSTANTS.BACKEND_USER_PROFILEPHOTO_KEY] = profileUrlString
         
         return dict
     }
