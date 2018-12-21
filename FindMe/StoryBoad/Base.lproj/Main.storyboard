@@ -221,7 +221,7 @@
                                     <constraint firstAttribute="height" constant="120" id="M9I-z3-rtY"/>
                                 </constraints>
                             </stackView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileTemplatePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="jfs-g3-2cY">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfilePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="jfs-g3-2cY">
                                 <rect key="frame" x="145" y="167" width="85" height="85"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -301,6 +301,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="profileTemplatePhoto" width="200" height="200"/>
+        <image name="defaultProfilePhoto" width="200" height="200"/>
     </resources>
 </document>
