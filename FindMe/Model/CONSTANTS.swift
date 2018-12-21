@@ -33,6 +33,11 @@ class CONSTANTS {
     static let BACKEND_USER_EMAIL_KEY : String = {
         return "email"
     }()
+    
+    static let SIGNIN_TO_SIGNUP_PAGE_SEGUE_IDENTIFIER : String = {
+        return "showSignupPage"
+    }()
+    
 }
 
 

@@ -42,8 +42,6 @@ class SignupPageViewController: UIViewController {
         BackendServices.Instance().userSignupAction(name: userName, email: email, password: password) { (user) in
             //TODO: use this info to launch the home screen if the user was able to sign in successfully
         }
-        
-        
     }
     
     override func viewDidLoad() {

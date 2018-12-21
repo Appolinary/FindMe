@@ -10,15 +10,12 @@ import Foundation
 
 class SigninPageViewModel{
     
-    private static let privateInstance = SigninPageViewModel()
+    private var signinPageView : SigninPageViewController
     
-    public static func Instance() -> SigninPageViewModel {
-        return privateInstance
+    init(signinpageview : SigninPageViewController) {
+        signinPageView = signinpageview
     }
     
-    private init(){
-        
-    }
     
     func signin(email : String , password : String, withCompletion : @escaping (GameUser?) -> ()){
         
@@ -31,5 +28,13 @@ class SigninPageViewModel{
         BackendServices.Instance().userSignupAction(name: userName, email: email, password: password) { (user) in
             withCompletion(user)
         }
+    }
+    
+    func showSignUpPage(){
+        self.signinPageView.performSegue(withIdentifier: CONSTANTS.SIGNIN_TO_SIGNUP_PAGE_SEGUE_IDENTIFIER, sender: signinPageView)
+    }
+    
+    func resignFirstResponders(){
+        self.signinPageView.resignFirstResponder()
     }
 }

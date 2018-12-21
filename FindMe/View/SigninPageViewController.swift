@@ -20,9 +20,13 @@ class SigninPageViewController: UIViewController {
     
     @IBOutlet weak var signInButton: UIButton!
     
+    private  lazy var signinPageViewModel : SigninPageViewModel! = {
+        return  SigninPageViewModel(signinpageview: self)
+    }()
+    
     
     @IBAction func SignUpGestureRecogniser(_ sender: UITapGestureRecognizer) {
-        self.performSegue(withIdentifier: "showSignupPage", sender: self)
+        self.signinPageViewModel.showSignUpPage()
     }
     
     @IBAction func signInButtonAction(_ sender: UIButton) {
@@ -31,7 +35,7 @@ class SigninPageViewController: UIViewController {
             return
         }
         
-        SigninPageViewModel.Instance().signin(email: email, password: password) { (user) in
+        signinPageViewModel.signin(email: email, password: password) { (user) in
             //TODO: use this info to launch the homepage if the user was able to sign in successfully
             
         }
@@ -39,8 +43,7 @@ class SigninPageViewController: UIViewController {
     
     
     @IBAction func screenTapped(_ sender: UITapGestureRecognizer) {
-        self.userNameTextField.resignFirstResponder()
-        self.passwordTextField.resignFirstResponder()
+       self.signinPageViewModel.resignFirstResponders()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
