@@ -53,40 +53,57 @@ class BackendServices{
     }
     
     //facilitates  sign up action of user
-    func userSignupAction(name : String , email : String, password : String, withCompletion : @escaping (GameUser?) -> ()){
+    func userSignupAction(name : String , email : String, password : String, profileImage : UIImage,  withCompletion : @escaping (GameUser?) -> ()){
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             guard error == nil , let result = authResult else {
                 withCompletion(nil)
                 return
             }
             
-            /*
-             TODO:
-               1. check if the profile image is different from the template image
-               2. if so then push the image to firebase storage and get the url of its new location
-               3. if not then just set the profileURl to some default string eg. empty profile pic
-               4. otherwise then create the game user object and push that to the users' node in firebase
-               5. send the new user object to the caller of this object
-             */
+            var profileUrlString = CONSTANTS.DEFAULT_PROFILE_PHOTO
             
-            let profileUrlString = CONSTANTS.DEFAULT_PROFILE_PHOTO // TODO : depends if the profile pic was set
+            let imageId = result.user.uid
             
-            let user = GameUser(name: name, email: email, uid: result.user.uid, profileUrlString: profileUrlString)
+            let ref = Storage.storage().reference().child(CONSTANTS.BACKEND_USERS_PROFIILE_IMAGES_TABLE_NAME).child(imageId)
             
-            self.updateBackend(reference: self.databaseReference.child(CONSTANTS.BACKEND_USERS_TABLE_NAME).child(result.user.uid), Data: user.returnAsDictionary(), withCompletion: { (pass) in
-                guard pass == true else {
-                    withCompletion(nil)
-                    return
+            self.uploadImageStorage(StorageRef: ref, image: profileImage, withCompletion: { (urlString) in
+                if let urlString = urlString{
+                    profileUrlString = urlString
                 }
                 
-                withCompletion(user)
+                let user = GameUser(name: name, email: email, uid: result.user.uid, profileUrlString: profileUrlString)
+                
+                self.updateBackend(reference: Database.database().reference().child(CONSTANTS.BACKEND_USERS_TABLE_NAME).child(result.user.uid).ref, Data: user.returnAsDictionary(), withCompletion: { (pass) in
+                    guard pass == true else {
+                        withCompletion(nil)
+                        return
+                    }
+                    
+                    withCompletion(user)
+                })
             })
         }
+    }
+    private func uploadImageStorage(StorageRef : StorageReference, image : UIImage, withCompletion : @escaping (String?) -> ()){
+        
+        guard image != #imageLiteral(resourceName: "defaultProfilePhoto") , let data = UIImagePNGRepresentation(image) else {
+            withCompletion(nil)
+            return
+        }
+        
+        StorageRef.putData(data, metadata: nil) { (metadata, error) in
+            guard error == nil else {return}
+            
+            metadata?.storageReference?.downloadURL(completion: { (url, error) in
+                guard error == nil, let url = url else {return }
+                withCompletion(url.absoluteString)
+            })
+        }.resume()
         
     }
     
     //this will be called to update the node at the provided reference with the speicified dictionary
-    func updateBackend(reference : DatabaseReference, Data : [String : Any] , withCompletion : @escaping (Bool) -> ()){
+    func updateBackend(reference : DatabaseReference, Data : [String : String] , withCompletion : @escaping (Bool) -> ()){
         reference.updateChildValues(Data) { (error, ref) in
             guard error == nil else{
                 withCompletion(false)

@@ -38,6 +38,10 @@ class CONSTANTS {
         return "showSignupPage"
     }()
     
+    static let BACKEND_USERS_PROFIILE_IMAGES_TABLE_NAME : String = {
+        return "profileImages"
+    }()
+    
 }
 
 

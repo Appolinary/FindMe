@@ -26,16 +26,12 @@ class SigninPageViewController: UIViewController {
     
     
     @IBAction func SignUpGestureRecogniser(_ sender: UITapGestureRecognizer) {
-        self.signinPageViewModel.showSignUpPage()
+        self.performSegue(withIdentifier: CONSTANTS.SIGNIN_TO_SIGNUP_PAGE_SEGUE_IDENTIFIER, sender: signinPageViewModel)
     }
     
     @IBAction func signInButtonAction(_ sender: UIButton) {
         
-        guard  let email = userNameTextField.text, let password = passwordTextField.text else {
-            return
-        }
-        
-        signinPageViewModel.signin(email: email, password: password) { (user) in
+        signinPageViewModel.signin(email: userNameTextField.text, password: passwordTextField.text) { (user) in
             //TODO: use this info to launch the homepage if the user was able to sign in successfully
             
         }
@@ -43,7 +39,9 @@ class SigninPageViewController: UIViewController {
     
     
     @IBAction func screenTapped(_ sender: UITapGestureRecognizer) {
-       self.signinPageViewModel.resignFirstResponders()
+        self.passwordTextField.resignFirstResponder()
+        self.userNameTextField.resignFirstResponder()
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +60,7 @@ class SigninPageViewController: UIViewController {
     }
 }
 
-extension SigninPageViewController : UITextFieldDelegate{
+extension SignupPageViewController : UITextFieldDelegate{
     
 }
 

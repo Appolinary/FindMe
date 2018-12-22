@@ -136,6 +136,7 @@
 				55BFC3FA21CD2DE200516CCA /* Model */,
 				55BFC3F821CD29B500516CCA /* View */,
 				55BFC3FE21CD2E8400516CCA /* Resources */,
+				5543C0C321CB346600853335 /* Info.plist */,
 			);
 			path = FindMe;
 			sourceTree = "<group>";
@@ -191,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				5543C0BE21CB346600853335 /* Assets.xcassets */,
-				5543C0C321CB346600853335 /* Info.plist */,
 				5543C0E521CB348C00853335 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
